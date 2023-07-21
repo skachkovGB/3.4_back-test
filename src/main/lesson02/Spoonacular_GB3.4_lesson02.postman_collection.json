@@ -1,0 +1,1570 @@
+{
+	"info": {
+		"_postman_id": "b3daec5f-a0e6-449b-bfe5-a1425bcf7ad9",
+		"name": "Spoonacular_GB3.4_lesson02",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET Complex Search",
+			"item": [
+				{
+					"name": "200 burger correct",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"\r",
+									"pm.sendRequest(\"https://postman-echo.com/get\", function (err, response) {\r",
+									"    console.log(response.json());\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Offset is equal to zero\", function () {\r",
+									"var jsonData = pm.response.json();\r",
+									"var offsetData = jsonData.offset;\r",
+									"pm.expect(offsetData).to.eql(0);\r",
+									"console.log(offsetData);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.spoonacular.com/recipes/complexSearch?query=burger",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spoonacular",
+								"com"
+							],
+							"path": [
+								"recipes",
+								"complexSearch"
+							],
+							"query": [
+								{
+									"key": "query",
+									"value": "burger",
+									"description": "Тест по бургерам"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "200 burger wrong",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"\r",
+									"pm.sendRequest(\"https://postman-echo.com/get\", function (err, response) {\r",
+									"    console.log(response.json());\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Offset is equal to zero\", function () {\r",
+									"var jsonData = pm.response.json();\r",
+									"var offsetData = jsonData.offset;\r",
+									"pm.expect(offsetData).to.eql(0);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Null in results\", function () {\r",
+									"var jsonData = pm.response.json();\r",
+									"var respResults = jsonData.results;\r",
+									"pm.expect(respResults.toString()).to.eql(\"\");\r",
+									"console.log(respResults);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.spoonacular.com/recipes/complexSearch?query=bburger",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spoonacular",
+								"com"
+							],
+							"path": [
+								"recipes",
+								"complexSearch"
+							],
+							"query": [
+								{
+									"key": "query",
+									"value": "bburger",
+									"description": "Неправильное написани имени блюда"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "404 query wrong WHY not 404",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"\r",
+									"pm.sendRequest(\"https://postman-echo.com/get\", function (err, response) {\r",
+									"    console.log(response.json());\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {\r",
+									"    pm.response.to.have.status(404);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Offset is equal to zero\", function () {\r",
+									"var jsonData = pm.response.json();\r",
+									"var offsetData = jsonData.offset;\r",
+									"pm.expect(offsetData).to.eql(0);\r",
+									"console.log(offsetData);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.spoonacular.com/recipes/complexSearch?qquery=burger",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spoonacular",
+								"com"
+							],
+							"path": [
+								"recipes",
+								"complexSearch"
+							],
+							"query": [
+								{
+									"key": "qquery",
+									"value": "burger",
+									"description": "Неправильное написание параметра"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "200 query+diet",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"\r",
+									"pm.sendRequest(\"https://postman-echo.com/get\", function (err, response) {\r",
+									"    console.log(response.json());\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Offset is equal to zero\", function () {\r",
+									"var jsonData = pm.response.json();\r",
+									"var offsetData = jsonData.offset;\r",
+									"pm.expect(offsetData).to.eql(0);\r",
+									"console.log(offsetData);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.spoonacular.com/recipes/complexSearch?query=burger&diet=Vegan",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spoonacular",
+								"com"
+							],
+							"path": [
+								"recipes",
+								"complexSearch"
+							],
+							"query": [
+								{
+									"key": "query",
+									"value": "burger",
+									"description": "Тест по бургерам"
+								},
+								{
+									"key": "diet",
+									"value": "Vegan",
+									"description": "Тест по диете"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "401 Wrong ApiKey",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"\r",
+									"pm.sendRequest(\"https://postman-echo.com/get\", function (err, response) {\r",
+									"    console.log(response.json());\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 401\", function () {\r",
+									"    pm.response.to.have.status(401);\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "apikey",
+							"apikey": [
+								{
+									"key": "value",
+									"value": "fd307cfad7aa4422a6171d0dea47d464",
+									"type": "string"
+								},
+								{
+									"key": "key",
+									"value": "apiKey",
+									"type": "string"
+								},
+								{
+									"key": "in",
+									"value": "query",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.spoonacular.com/recipes/complexSearch?query=burger",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spoonacular",
+								"com"
+							],
+							"path": [
+								"recipes",
+								"complexSearch"
+							],
+							"query": [
+								{
+									"key": "query",
+									"value": "burger",
+									"description": "Тест по бургерам"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "200 Wrong ReadyTime WHY not NULL",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"\r",
+									"pm.sendRequest(\"https://postman-echo.com/get\", function (err, response) {\r",
+									"    console.log(response.json());\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Null in results\", function () {\r",
+									"var jsonData = pm.response.json();\r",
+									"var respResults = jsonData.results;\r",
+									"pm.expect(respResults.toString()).to.eql(\"\");\r",
+									"console.log(respResults);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.spoonacular.com/recipes/complexSearch?query=burger&maxReadyTime=0",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spoonacular",
+								"com"
+							],
+							"path": [
+								"recipes",
+								"complexSearch"
+							],
+							"query": [
+								{
+									"key": "query",
+									"value": "burger",
+									"description": "Тест по бургерам"
+								},
+								{
+									"key": "maxReadyTime",
+									"value": "0",
+									"description": "Тест с неправильным временем"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "200 Minimal ReadyTime",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"\r",
+									"pm.sendRequest(\"https://postman-echo.com/get\", function (err, response) {\r",
+									"    console.log(response.json());\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Null in results\", function () {\r",
+									"var jsonData = pm.response.json();\r",
+									"var respResults = jsonData.results;\r",
+									"pm.expect(respResults.toString()).to.eql(\"\");\r",
+									"console.log(respResults);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.spoonacular.com/recipes/complexSearch?query=burger&maxReadyTime=1",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spoonacular",
+								"com"
+							],
+							"path": [
+								"recipes",
+								"complexSearch"
+							],
+							"query": [
+								{
+									"key": "query",
+									"value": "burger",
+									"description": "Тест по бургерам"
+								},
+								{
+									"key": "maxReadyTime",
+									"value": "1",
+									"description": "Тест с минимальным временем"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "404 Search BigWrongTime",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"\r",
+									"pm.sendRequest(\"https://postman-echo.com/get\", function (err, response) {\r",
+									"    console.log(response.json());\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {\r",
+									"    pm.response.to.have.status(404);\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.spoonacular.com/recipes/complexSearch?query=burger&maxReadyTime=100000000000000000000000000000000000000000",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spoonacular",
+								"com"
+							],
+							"path": [
+								"recipes",
+								"complexSearch"
+							],
+							"query": [
+								{
+									"key": "query",
+									"value": "burger",
+									"description": "Тест по бургерам"
+								},
+								{
+									"key": "maxReadyTime",
+									"value": "100000000000000000000000000000000000000000",
+									"description": "Огромное времени"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "404 NegativTime WHY WORK",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"\r",
+									"pm.sendRequest(\"https://postman-echo.com/get\", function (err, response) {\r",
+									"    console.log(response.json());\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {\r",
+									"    pm.response.to.have.status(404);\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.spoonacular.com/recipes/complexSearch?query=burger&maxReadyTime=-1",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spoonacular",
+								"com"
+							],
+							"path": [
+								"recipes",
+								"complexSearch"
+							],
+							"query": [
+								{
+									"key": "query",
+									"value": "burger",
+									"description": "Тест по бургерам"
+								},
+								{
+									"key": "maxReadyTime",
+									"value": "-1",
+									"description": "Отрицательное время"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "404 WrongType WHY WORK",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"\r",
+									"pm.sendRequest(\"https://postman-echo.com/get\", function (err, response) {\r",
+									"    console.log(response.json());\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {\r",
+									"    pm.response.to.have.status(404);\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.spoonacular.com/recipes/complexSearch?query=burger&IgborePantry=10",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spoonacular",
+								"com"
+							],
+							"path": [
+								"recipes",
+								"complexSearch"
+							],
+							"query": [
+								{
+									"key": "query",
+									"value": "burger",
+									"description": "Тест по бургерам"
+								},
+								{
+									"key": "IgborePantry",
+									"value": "10",
+									"description": "Не тот тип переменной"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "200 burger sort",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"\r",
+									"pm.sendRequest(\"https://postman-echo.com/get\", function (err, response) {\r",
+									"    console.log(response.json());\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Offset is equal to zero\", function () {\r",
+									"var jsonData = pm.response.json();\r",
+									"var offsetData = jsonData.offset;\r",
+									"pm.expect(offsetData).to.eql(0);\r",
+									"console.log(offsetData);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.spoonacular.com/recipes/complexSearch?query=burger&sort=calories",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spoonacular",
+								"com"
+							],
+							"path": [
+								"recipes",
+								"complexSearch"
+							],
+							"query": [
+								{
+									"key": "query",
+									"value": "burger",
+									"description": "Тест по бургерам"
+								},
+								{
+									"key": "sort",
+									"value": "calories"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "200 conflict carbs",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"\r",
+									"pm.sendRequest(\"https://postman-echo.com/get\", function (err, response) {\r",
+									"    console.log(response.json());\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Null in results\", function () {\r",
+									"var jsonData = pm.response.json();\r",
+									"var respResults = jsonData.results;\r",
+									"pm.expect(respResults.toString()).to.eql(\"\");\r",
+									"console.log(respResults);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.spoonacular.com/recipes/complexSearch?minCarbs=60&maxCarbs=50",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spoonacular",
+								"com"
+							],
+							"path": [
+								"recipes",
+								"complexSearch"
+							],
+							"query": [
+								{
+									"key": "query",
+									"value": "burger",
+									"description": "Тест по бургерам",
+									"disabled": true
+								},
+								{
+									"key": "sort",
+									"value": "calories",
+									"disabled": true
+								},
+								{
+									"key": "minCarbs",
+									"value": "60"
+								},
+								{
+									"key": "maxCarbs",
+									"value": "50"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "200 correct carbs",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"\r",
+									"pm.sendRequest(\"https://postman-echo.com/get\", function (err, response) {\r",
+									"    console.log(response.json());\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.spoonacular.com/recipes/complexSearch?minCarbs=50&maxCarbs=55",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spoonacular",
+								"com"
+							],
+							"path": [
+								"recipes",
+								"complexSearch"
+							],
+							"query": [
+								{
+									"key": "query",
+									"value": "burger",
+									"description": "Тест по бургерам",
+									"disabled": true
+								},
+								{
+									"key": "sort",
+									"value": "calories",
+									"disabled": true
+								},
+								{
+									"key": "minCarbs",
+									"value": "50"
+								},
+								{
+									"key": "maxCarbs",
+									"value": "55"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "200 wrong carbs number",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"\r",
+									"pm.sendRequest(\"https://postman-echo.com/get\", function (err, response) {\r",
+									"    console.log(response.json());\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Null in results\", function () {\r",
+									"var jsonData = pm.response.json();\r",
+									"var respResults = jsonData.results;\r",
+									"pm.expect(respResults.toString()).to.eql(\"\");\r",
+									"console.log(respResults);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://api.spoonacular.com/recipes/complexSearch?maxCarbs=-5",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spoonacular",
+								"com"
+							],
+							"path": [
+								"recipes",
+								"complexSearch"
+							],
+							"query": [
+								{
+									"key": "query",
+									"value": "burger",
+									"description": "Тест по бургерам",
+									"disabled": true
+								},
+								{
+									"key": "sort",
+									"value": "calories",
+									"disabled": true
+								},
+								{
+									"key": "minCarbs",
+									"value": "50",
+									"disabled": true
+								},
+								{
+									"key": "maxCarbs",
+									"value": "-5"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "POST Classify Cuisine",
+			"item": [
+				{
+					"name": "200",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://api.spoonacular.com/recipes/cuisine",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spoonacular",
+								"com"
+							],
+							"path": [
+								"recipes",
+								"cuisine"
+							],
+							"query": [
+								{
+									"key": "title",
+									"value": "burger",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "200 title",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"country check\", function () {\r",
+									"var jsonData = pm.response.json();\r",
+									"var country = jsonData.cuisine;\r",
+									"pm.expect(country).to.eql(\"American\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "burger",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://api.spoonacular.com/recipes/cuisine",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spoonacular",
+								"com"
+							],
+							"path": [
+								"recipes",
+								"cuisine"
+							],
+							"query": [
+								{
+									"key": "title",
+									"value": "burger",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "200 title one more",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"country check\", function () {\r",
+									"var jsonData = pm.response.json();\r",
+									"var country = jsonData.cuisine;\r",
+									"pm.expect(country).to.eql(\"Mexican\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "tacos",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://api.spoonacular.com/recipes/cuisine",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spoonacular",
+								"com"
+							],
+							"path": [
+								"recipes",
+								"cuisine"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "404 Wrong title",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 404\", function () {\r",
+									"    pm.response.to.have.status(404);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "BburgerRrr",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://api.spoonacular.com/recipes/cuisine",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spoonacular",
+								"com"
+							],
+							"path": [
+								"recipes",
+								"cuisine"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "200 ingredient",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "ingredientList",
+									"value": "pork",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "Roast Pork Florentine With Pomegranate Sauce",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "title",
+									"value": "Roasted Plum Oatmeal",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://api.spoonacular.com/recipes/cuisine",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spoonacular",
+								"com"
+							],
+							"path": [
+								"recipes",
+								"cuisine"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "200 lang",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "language",
+									"value": "de",
+									"type": "text"
+								},
+								{
+									"key": "title",
+									"value": "fish",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://api.spoonacular.com/recipes/cuisine",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spoonacular",
+								"com"
+							],
+							"path": [
+								"recipes",
+								"cuisine"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "200 cuisine",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"cuisine check\", function () {\r",
+									"var jsonData = pm.response.json();\r",
+									"var cuisine = jsonData.cuisine;\r",
+									"pm.expect(cuisine).to.eql(\"Mediterranean\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "language",
+									"value": "de",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "title",
+									"value": "borsch",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "ingredientList",
+									"value": "cabbage",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "https://api.spoonacular.com/recipes/cuisine",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spoonacular",
+								"com"
+							],
+							"path": [
+								"recipes",
+								"cuisine"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "200 confidence check",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"confidence check\", function () {\r",
+									"var jsonData = pm.response.json();\r",
+									"var confidence = jsonData.confidence;\r",
+									"pm.expect(confidence).to.eql(0);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "language",
+									"value": "de",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "title",
+									"value": "borsch",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "ingredientList",
+									"value": "cabbage",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "https://api.spoonacular.com/recipes/cuisine",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spoonacular",
+								"com"
+							],
+							"path": [
+								"recipes",
+								"cuisine"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "200 time resp",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"Response time is less than 200ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "language",
+									"value": "de",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "title",
+									"value": "borsch",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "ingredientList",
+									"value": "cabbage",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "https://api.spoonacular.com/recipes/cuisine",
+							"protocol": "https",
+							"host": [
+								"api",
+								"spoonacular",
+								"com"
+							],
+							"path": [
+								"recipes",
+								"cuisine"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "key",
+				"value": "apiKey",
+				"type": "string"
+			},
+			{
+				"key": "in",
+				"value": "query",
+				"type": "string"
+			},
+			{
+				"key": "value",
+				"value": "fd307cfad7aa4422a6171d0dea47d462",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://api.spoonacular.com",
+			"type": "string"
+		},
+		{
+			"key": "apiKey",
+			"value": "fd307cfad7aa4422a6171d0dea47d462",
+			"type": "string"
+		}
+	]
+}
