@@ -5,12 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="645a7880-3083-4b9d-ab01-d272ddfbaf7b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/my.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/lesson03/AbstractTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/lesson03/SpoonacularGet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/lesson03/SpoonacularPost.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/AppTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="PREVIEW_PUSH_PROTECTED_ONLY" value="true" />
@@ -35,7 +48,11 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   },
   "keyToStringList": {
     "ChangesTree.GroupingKeys": [
@@ -49,6 +66,95 @@
       <recent name="D:\projects_java\3.4_backend\3.4_back-test\back_gb\src\main\lesson01" />
       <recent name="D:\projects_java\3.4_backend\3.4_back-test\back_gb\src\main\lesson02" />
     </key>
+  </component>
+  <component name="RunManager" selected="JUnit.SpoonacularGet.addMealTest">
+    <configuration name="SpoonacularGet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="back_gb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lesson03.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lesson03" />
+      <option name="MAIN_CLASS_NAME" value="lesson03.SpoonacularGet" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpoonacularGet.addMealTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="back_gb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lesson03.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lesson03" />
+      <option name="MAIN_CLASS_NAME" value="lesson03.SpoonacularGet" />
+      <option name="METHOD_NAME" value="addMealTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpoonacularPost" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="back_gb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lesson03.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lesson03" />
+      <option name="MAIN_CLASS_NAME" value="lesson03.SpoonacularPost" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpoonacularPost.postClassifyCuisinesConfidenceCheck" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="back_gb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lesson03.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lesson03" />
+      <option name="MAIN_CLASS_NAME" value="lesson03.SpoonacularPost" />
+      <option name="METHOD_NAME" value="postClassifyCuisinesConfidenceCheck" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpoonacularPost.postClassifyCuisinesContains" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="back_gb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lesson03.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lesson03" />
+      <option name="MAIN_CLASS_NAME" value="lesson03.SpoonacularPost" />
+      <option name="METHOD_NAME" value="postClassifyCuisinesContains" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.SpoonacularGet.addMealTest" />
+        <item itemvalue="JUnit.SpoonacularPost" />
+        <item itemvalue="JUnit.SpoonacularGet" />
+        <item itemvalue="JUnit.SpoonacularPost.postClassifyCuisinesConfidenceCheck" />
+        <item itemvalue="JUnit.SpoonacularPost.postClassifyCuisinesContains" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -80,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689948181217</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="pom.xml">
+      <created>1689948583014</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1689948583014</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
