@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="645a7880-3083-4b9d-ab01-d272ddfbaf7b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/my.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lesson03/AbstractTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lesson03/SpoonacularGet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lesson03/SpoonacularPost.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/my.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/my.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,12 +188,20 @@
       <option name="project" value="LOCAL" />
       <updated>1689948583014</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="ДЗ 03.&#10;Сайт spoonacular не пускает в личный кабинет, hash и userName взял с урока у преподавателя.">
+      <created>1690207407634</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1690207407634</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ДЗ1, ДЗ2" />
     <MESSAGE value="pom.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="pom.xml" />
+    <MESSAGE value="ДЗ 03.&#10;Сайт spoonacular не пускает в личный кабинет, hash и userName взял с урока у преподавателя." />
+    <option name="LAST_COMMIT_MESSAGE" value="ДЗ 03.&#10;Сайт spoonacular не пускает в личный кабинет, hash и userName взял с урока у преподавателя." />
   </component>
 </project>
