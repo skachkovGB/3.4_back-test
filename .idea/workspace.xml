@@ -4,9 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="645a7880-3083-4b9d-ab01-d272ddfbaf7b" name="Changes" comment="">
+    <list default="true" id="645a7880-3083-4b9d-ab01-d272ddfbaf7b" name="Changes" comment="ДЗ 04.">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson04/GetResposeJson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson04/PostResponseJson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson04/RespNutrient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson04/RespNutrition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson04/RespResults.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/lesson04/AbstractTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/lesson04/SpoonGet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/lesson04/SpoonPost.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/my.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/my.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/lesson01/test_Calc_GB_3.4-soapui-project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson01/test_Calc_GB_3.4-soapui-project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/lesson02/Spoonacular_GB3.4_lesson02.postman_collection.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson02/Spoonacular_GB3.4_lesson02.postman_collection.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +58,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   },
   "keyToStringList": {
     "ChangesTree.GroupingKeys": [
@@ -58,83 +69,84 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\projects_java\3.4_backend\3.4_back-test\back_gb\src\main\java" />
       <recent name="D:\projects_java\3.4_backend\3.4_back-test\back_gb\src\main\lesson01" />
       <recent name="D:\projects_java\3.4_backend\3.4_back-test\back_gb\src\main\lesson02" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SpoonacularGet.addMealTest">
-    <configuration name="SpoonacularGet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.SpoonGet">
+    <configuration name="SpoonGet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="back_gb" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lesson03.*" />
+          <option name="PATTERN" value="lesson04.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="lesson03" />
-      <option name="MAIN_CLASS_NAME" value="lesson03.SpoonacularGet" />
+      <option name="PACKAGE_NAME" value="lesson04" />
+      <option name="MAIN_CLASS_NAME" value="lesson04.SpoonGet" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpoonacularGet.addMealTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SpoonPost" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="back_gb" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lesson03.*" />
+          <option name="PATTERN" value="lesson04.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="lesson03" />
-      <option name="MAIN_CLASS_NAME" value="lesson03.SpoonacularGet" />
+      <option name="PACKAGE_NAME" value="lesson04" />
+      <option name="MAIN_CLASS_NAME" value="lesson04.SpoonPost" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpoonPost.addMealTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="back_gb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lesson04.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lesson04" />
+      <option name="MAIN_CLASS_NAME" value="lesson04.SpoonPost" />
       <option name="METHOD_NAME" value="addMealTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpoonacularPost" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SpoonPost.checkDeleteElem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="back_gb" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lesson03.*" />
+          <option name="PATTERN" value="lesson04.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="lesson03" />
-      <option name="MAIN_CLASS_NAME" value="lesson03.SpoonacularPost" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SpoonacularPost.postClassifyCuisinesConfidenceCheck" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="back_gb" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lesson03.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="lesson03" />
-      <option name="MAIN_CLASS_NAME" value="lesson03.SpoonacularPost" />
-      <option name="METHOD_NAME" value="postClassifyCuisinesConfidenceCheck" />
+      <option name="PACKAGE_NAME" value="lesson04" />
+      <option name="MAIN_CLASS_NAME" value="lesson04.SpoonPost" />
+      <option name="METHOD_NAME" value="checkDeleteElem" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpoonacularPost.postClassifyCuisinesContains" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SpoonPost.postClassifyCuisinesContains" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="back_gb" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lesson03.*" />
+          <option name="PATTERN" value="lesson04.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="lesson03" />
-      <option name="MAIN_CLASS_NAME" value="lesson03.SpoonacularPost" />
+      <option name="PACKAGE_NAME" value="lesson04" />
+      <option name="MAIN_CLASS_NAME" value="lesson04.SpoonPost" />
       <option name="METHOD_NAME" value="postClassifyCuisinesContains" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -143,11 +155,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SpoonacularGet.addMealTest" />
-        <item itemvalue="JUnit.SpoonacularPost" />
-        <item itemvalue="JUnit.SpoonacularGet" />
-        <item itemvalue="JUnit.SpoonacularPost.postClassifyCuisinesConfidenceCheck" />
-        <item itemvalue="JUnit.SpoonacularPost.postClassifyCuisinesContains" />
+        <item itemvalue="JUnit.SpoonGet" />
+        <item itemvalue="JUnit.SpoonPost" />
+        <item itemvalue="JUnit.SpoonPost.checkDeleteElem" />
+        <item itemvalue="JUnit.SpoonPost.addMealTest" />
+        <item itemvalue="JUnit.SpoonPost.postClassifyCuisinesContains" />
       </list>
     </recent_temporary>
   </component>
@@ -195,13 +207,47 @@
       <option name="project" value="LOCAL" />
       <updated>1690207407634</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="ДЗ 03.&#10;прочитал презентацию) создал пользователя)">
+      <created>1690207847678</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1690207847678</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/master" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ДЗ1, ДЗ2" />
     <MESSAGE value="pom.xml" />
     <MESSAGE value="ДЗ 03.&#10;Сайт spoonacular не пускает в личный кабинет, hash и userName взял с урока у преподавателя." />
-    <option name="LAST_COMMIT_MESSAGE" value="ДЗ 03.&#10;Сайт spoonacular не пускает в личный кабинет, hash и userName взял с урока у преподавателя." />
+    <MESSAGE value="ДЗ 03.&#10;прочитал презентацию) создал пользователя)" />
+    <option name="LAST_COMMIT_MESSAGE" value="ДЗ 03.&#10;прочитал презентацию) создал пользователя)" />
   </component>
 </project>
