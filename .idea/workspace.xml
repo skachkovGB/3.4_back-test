@@ -4,20 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="645a7880-3083-4b9d-ab01-d272ddfbaf7b" name="Changes" comment="ДЗ 04.">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson04/GetResposeJson.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson04/PostResponseJson.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson04/RespNutrient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson04/RespNutrition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson04/RespResults.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lesson04/AbstractTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lesson04/SpoonGet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lesson04/SpoonPost.java" afterDir="false" />
+    <list default="true" id="645a7880-3083-4b9d-ab01-d272ddfbaf7b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/lesson01/test_Calc_GB_3.4-soapui-project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson01/test_Calc_GB_3.4-soapui-project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/lesson02/Spoonacular_GB3.4_lesson02.postman_collection.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson02/Spoonacular_GB3.4_lesson02.postman_collection.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +57,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\projects_java\3.4_backend\3.4_back-test\back_gb\src\main" />
       <recent name="D:\projects_java\3.4_backend\3.4_back-test\back_gb\src\main\java" />
       <recent name="D:\projects_java\3.4_backend\3.4_back-test\back_gb\src\main\lesson01" />
       <recent name="D:\projects_java\3.4_backend\3.4_back-test\back_gb\src\main\lesson02" />
@@ -214,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690207847678</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="ДЗ 04. Копипаста зло, несколько часов искал ошибку в простом гетере, потому что не поменял return значение.">
+      <created>1690377844438</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1690377844438</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -248,6 +244,7 @@
     <MESSAGE value="pom.xml" />
     <MESSAGE value="ДЗ 03.&#10;Сайт spoonacular не пускает в личный кабинет, hash и userName взял с урока у преподавателя." />
     <MESSAGE value="ДЗ 03.&#10;прочитал презентацию) создал пользователя)" />
-    <option name="LAST_COMMIT_MESSAGE" value="ДЗ 03.&#10;прочитал презентацию) создал пользователя)" />
+    <MESSAGE value="ДЗ 04. Копипаста зло, несколько часов искал ошибку в простом гетере, потому что не поменял return значение." />
+    <option name="LAST_COMMIT_MESSAGE" value="ДЗ 04. Копипаста зло, несколько часов искал ошибку в простом гетере, потому что не поменял return значение." />
   </component>
 </project>
