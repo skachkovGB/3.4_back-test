@@ -4,8 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="645a7880-3083-4b9d-ab01-d272ddfbaf7b" name="Changes" comment="">
+    <list default="true" id="645a7880-3083-4b9d-ab01-d272ddfbaf7b" name="Changes" comment="ДЗ 05. Долго мучался со спрингом, качал его регистрировался, корректировал зависимости. К сожалению, победил грубой силой, а не интеллектом (когда удалил spring и перегрузил, пропустил всплывающее окно и все заработало)">
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson05/api/CategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson05/api/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson05/dto/GetCategoryResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson05/dto/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson05/utils/LoggingInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lesson05/utils/RetrofitUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mini-market.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/lesson05/CategoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/lesson05/ProductTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/my.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/my.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,105 +50,107 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   },
-  "keyToStringList": {
-    "ChangesTree.GroupingKeys": [
-      "module",
-      "directory"
+  &quot;keyToStringList&quot;: {
+    &quot;ChangesTree.GroupingKeys&quot;: [
+      &quot;module&quot;,
+      &quot;directory&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\projects_java\3.4_backend\3.4_back-test\back_gb\src\main\resources" />
       <recent name="D:\projects_java\3.4_backend\3.4_back-test\back_gb\src\main" />
       <recent name="D:\projects_java\3.4_backend\3.4_back-test\back_gb\src\main\java" />
       <recent name="D:\projects_java\3.4_backend\3.4_back-test\back_gb\src\main\lesson01" />
       <recent name="D:\projects_java\3.4_backend\3.4_back-test\back_gb\src\main\lesson02" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SpoonGet">
-    <configuration name="SpoonGet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ProductTest.getProductByIdNegativeTest">
+    <configuration name="ProductTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="back_gb" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lesson04.*" />
+          <option name="PATTERN" value="lesson05.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="lesson04" />
-      <option name="MAIN_CLASS_NAME" value="lesson04.SpoonGet" />
+      <option name="PACKAGE_NAME" value="lesson05" />
+      <option name="MAIN_CLASS_NAME" value="lesson05.ProductTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpoonPost" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProductTest.createProductTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="back_gb" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lesson04.*" />
+          <option name="PATTERN" value="lesson05.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="lesson04" />
-      <option name="MAIN_CLASS_NAME" value="lesson04.SpoonPost" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SpoonPost.addMealTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="back_gb" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lesson04.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="lesson04" />
-      <option name="MAIN_CLASS_NAME" value="lesson04.SpoonPost" />
-      <option name="METHOD_NAME" value="addMealTest" />
+      <option name="PACKAGE_NAME" value="lesson05" />
+      <option name="MAIN_CLASS_NAME" value="lesson05.ProductTest" />
+      <option name="METHOD_NAME" value="createProductTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpoonPost.checkDeleteElem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProductTest.deleteProductTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="back_gb" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lesson04.*" />
+          <option name="PATTERN" value="lesson05.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="lesson04" />
-      <option name="MAIN_CLASS_NAME" value="lesson04.SpoonPost" />
-      <option name="METHOD_NAME" value="checkDeleteElem" />
+      <option name="PACKAGE_NAME" value="lesson05" />
+      <option name="MAIN_CLASS_NAME" value="lesson05.ProductTest" />
+      <option name="METHOD_NAME" value="deleteProductTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpoonPost.postClassifyCuisinesContains" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProductTest.getProductByIdNegativeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="back_gb" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lesson04.*" />
+          <option name="PATTERN" value="lesson05.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="lesson04" />
-      <option name="MAIN_CLASS_NAME" value="lesson04.SpoonPost" />
-      <option name="METHOD_NAME" value="postClassifyCuisinesContains" />
+      <option name="PACKAGE_NAME" value="lesson05" />
+      <option name="MAIN_CLASS_NAME" value="lesson05.ProductTest" />
+      <option name="METHOD_NAME" value="getProductByIdNegativeTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductTest.getProductByIdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="back_gb" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lesson05.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lesson05" />
+      <option name="MAIN_CLASS_NAME" value="lesson05.ProductTest" />
+      <option name="METHOD_NAME" value="getProductByIdTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -144,11 +158,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SpoonGet" />
-        <item itemvalue="JUnit.SpoonPost" />
-        <item itemvalue="JUnit.SpoonPost.checkDeleteElem" />
-        <item itemvalue="JUnit.SpoonPost.addMealTest" />
-        <item itemvalue="JUnit.SpoonPost.postClassifyCuisinesContains" />
+        <item itemvalue="JUnit.ProductTest.getProductByIdNegativeTest" />
+        <item itemvalue="JUnit.ProductTest.createProductTest" />
+        <item itemvalue="JUnit.ProductTest.getProductByIdTest" />
+        <item itemvalue="JUnit.ProductTest" />
+        <item itemvalue="JUnit.ProductTest.deleteProductTest" />
       </list>
     </recent_temporary>
   </component>
@@ -210,7 +224,21 @@
       <option name="project" value="LOCAL" />
       <updated>1690377844438</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="ДЗ 04. Копипаста зло, несколько часов искал ошибку в простом гетере, потому что не поменял return значение.">
+      <created>1690705986410</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1690705986411</updated>
+    </task>
+    <task id="LOCAL-00009" summary="ДЗ 05. Тест Readme.md">
+      <created>1690706090129</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1690706090129</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -245,6 +273,8 @@
     <MESSAGE value="ДЗ 03.&#10;Сайт spoonacular не пускает в личный кабинет, hash и userName взял с урока у преподавателя." />
     <MESSAGE value="ДЗ 03.&#10;прочитал презентацию) создал пользователя)" />
     <MESSAGE value="ДЗ 04. Копипаста зло, несколько часов искал ошибку в простом гетере, потому что не поменял return значение." />
-    <option name="LAST_COMMIT_MESSAGE" value="ДЗ 04. Копипаста зло, несколько часов искал ошибку в простом гетере, потому что не поменял return значение." />
+    <MESSAGE value="ДЗ 05. Тест Readme.md" />
+    <MESSAGE value="ДЗ 05. Долго мучался со спрингом, качал его регистрировался, корректировал зависимости. К сожалению, победил грубой силой, а не интеллектом (когда удалил spring и перегрузил, пропустил всплывающее окно и все заработало)" />
+    <option name="LAST_COMMIT_MESSAGE" value="ДЗ 05. Долго мучался со спрингом, качал его регистрировался, корректировал зависимости. К сожалению, победил грубой силой, а не интеллектом (когда удалил spring и перегрузил, пропустил всплывающее окно и все заработало)" />
   </component>
 </project>
