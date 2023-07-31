@@ -1,5 +1,6 @@
 Создано два тестовых класса. Для проверки методов для Product - ProductTest, для Category - CategoryTest.
 
+
 В ProductTest проверяется 5 запросов:
 get         /api/v1/products
 post        /api/v1/products
