@@ -4,20 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="645a7880-3083-4b9d-ab01-d272ddfbaf7b" name="Changes" comment="ДЗ 05. Долго мучался со спрингом, качал его регистрировался, корректировал зависимости. К сожалению, победил грубой силой, а не интеллектом (когда удалил spring и перегрузил, пропустил всплывающее окно и все заработало)">
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson05/api/CategoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson05/api/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson05/dto/GetCategoryResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson05/dto/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson05/utils/LoggingInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lesson05/utils/RetrofitUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mini-market.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lesson05/CategoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/lesson05/ProductTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="645a7880-3083-4b9d-ab01-d272ddfbaf7b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/my.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/my.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -238,7 +226,21 @@
       <option name="project" value="LOCAL" />
       <updated>1690706090129</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="ДЗ 05. Долго мучался со спрингом, качал его регистрировался, корректировал зависимости. К сожалению, победил грубой силой, а не интеллектом (когда удалил spring и перегрузил, пропустил всплывающее окно и все заработало)&#10;Не удалял rest-assured сознательно, знаю что он не нужен.">
+      <created>1690810841467</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1690810841467</updated>
+    </task>
+    <task id="LOCAL-00011" summary="ДЗ 05. Тест форматирования readme.md">
+      <created>1690811096076</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1690811096076</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -275,6 +277,8 @@
     <MESSAGE value="ДЗ 04. Копипаста зло, несколько часов искал ошибку в простом гетере, потому что не поменял return значение." />
     <MESSAGE value="ДЗ 05. Тест Readme.md" />
     <MESSAGE value="ДЗ 05. Долго мучался со спрингом, качал его регистрировался, корректировал зависимости. К сожалению, победил грубой силой, а не интеллектом (когда удалил spring и перегрузил, пропустил всплывающее окно и все заработало)" />
-    <option name="LAST_COMMIT_MESSAGE" value="ДЗ 05. Долго мучался со спрингом, качал его регистрировался, корректировал зависимости. К сожалению, победил грубой силой, а не интеллектом (когда удалил spring и перегрузил, пропустил всплывающее окно и все заработало)" />
+    <MESSAGE value="ДЗ 05. Долго мучался со спрингом, качал его регистрировался, корректировал зависимости. К сожалению, победил грубой силой, а не интеллектом (когда удалил spring и перегрузил, пропустил всплывающее окно и все заработало)&#10;Не удалял rest-assured сознательно, знаю что он не нужен." />
+    <MESSAGE value="ДЗ 05. Тест форматирования readme.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="ДЗ 05. Тест форматирования readme.md" />
   </component>
 </project>
